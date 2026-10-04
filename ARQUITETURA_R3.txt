@@ -1,0 +1,31 @@
+NEXVORY CLOUD R3
+================
+ANDROID / WEB
+  -> API CONTROL PLANE
+     -> RobotSession persistente
+     -> RiskService
+CLOUD WORKER POR CONTA
+  -> Deriv public market data
+  -> FLOW R39 puro
+  -> ExecutionCoordinator idempotente
+  -> DerivAdapter DEMO
+     -> OTP REST
+     -> authenticated ws/demo
+     -> proposal
+     -> buy
+     -> proposal_open_contract
+  -> resultado -> RiskService
+
+PARADAS DEFINITIVAS:
+- usuário
+- gerenciamento
+- bloqueio crítico de segurança
+
+FALHA TEMPORÁRIA:
+- PAUSED_RECONNECTING -> backoff -> RUNNING
+
+REAL:
+- HARD BLOCK na R3
+
+ANDROID:
+- fora do caminho crítico; fechar/matar o app não encerra o worker Cloud.

@@ -1,0 +1,18 @@
+{
+  "source_package": "Nexvory-Motor-R39-Para-Cloud.zip",
+  "zip_sha256": "666a3046fbbd30f97e97c979029c25fef05da4a85e38b37a7a219c893a673ea8",
+  "files": {
+    "v14_7_engine.py": "c0122a4e3f450f8ab772fd35d3d1268a6a23c1758bb2b1d959dc65c40815530f",
+    "nexvory_bridge.py": "e5544e4524e95038625fdf73bf52b7e25ef6a83f254e08c64f9b6a88bacc30a0",
+    "nexvory_flow_m1.py": "e6fa48ce25f1e1ed439912b0c1b74216c5e7d80528cfc93cef366539e0d31b99",
+    "nexvory_flow_exec_demo.py": "c8c9e21e6c0a2478267c648b0f88da30840a8d2310bd236c07e08ac6ad58715e"
+  },
+  "active_strategy_core": {
+    "source": "nexvory_flow_m1.py lines 1-324",
+    "destination": "app/strategies/flow_r39_core.py",
+    "policy": "copied verbatim; adapter normalizes I/O only",
+    "sha256": "eb671cac0a290eee63fab4581d7b2b7de96dc745fb8d7d5d6dfeb21e7d087f03"
+  },
+  "real_execution": false,
+  "deriv_execution": "BLOCKED_IN_R2"
+}
